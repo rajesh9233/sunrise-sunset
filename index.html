@@ -9,6 +9,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 </head>
 <body>
+    <div class="container my-5">
+         <div class="display-3 text-center my-5">Sun rise and Sun set Time</div>
+        <div class="row">
+            <div class="form-group col-6">
+                <select name="countries" id="countries" class="form-control">
+                    <option value="">Select the Country</option>
+                </select>
+            </div>
+            <div class="form-group col-6">
+                <button id="search" class="btn btn-primary">Search</button>
+            </div>
+            <div class="display-4 col-12 text-center" id="country-name"></div>
+            <div class="col-3 card d-none" id="card1" style="width: 10rem;">
+                <img src="https://play-lh.googleusercontent.com/SVBBivgnNiOhP61pJbxJeJ25-uzsXc6twQfsmIKDk85yno17wiLn3epHvNNfzf4pr5QQ=rw" height="200" width="200" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sun Rise</h5>
+                  <p class="card-text" id="sunrise-id"></p>
+                </div>
+              </div>
+            <div class="col-3 card d-none" id="card2" style="width: 10rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt_tKjx5jkpd75Xoiet8UTdFd-qKmWwzHK-oxsyDfMkJkQR12KnnAcn_QubqikLDBJD18&usqp=CAU" height="200" width="200" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sun Set</h5>
+                  <p class="card-text" id="sunset-id"></p>
+                </div>
+              </div>
+        </div>          
+    </div>
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
